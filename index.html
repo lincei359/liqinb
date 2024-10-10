@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>舒尔特表格游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="container">
+        <h1>舒尔特表格挑战</h1>
+        <div id="description">
+            <p>测试你的反应和注意力！选择难度，按照顺序点击数字，看看你能多快完成！</p>
+        </div>
+        <!-- 新增难度选择器 -->
+        <select id="difficulty" class="btn">
+            <option value="easy">简单</option>
+            <option value="medium">中等</option>
+            <option value="hard">困难</option>
+        </select>
+        <button id="start-btn" class="btn">开始游戏</button>
+        <div id="grid-container"></div>
+        <p id="timer">时间: 0 秒</p>
+        <p id="best-time">最快成绩: <span id="best">无</span></p>
+    </div>
+
+    <footer class="footer">
+        <p>Powered by 李奇</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
